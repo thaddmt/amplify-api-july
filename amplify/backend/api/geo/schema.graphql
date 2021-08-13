@@ -1,0 +1,5 @@
+type DeviceModel @model {
+  id: ID!
+  owner: String
+  metadata1: String!
+}
