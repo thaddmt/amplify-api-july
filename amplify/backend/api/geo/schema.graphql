@@ -1,5 +1,6 @@
 type DeviceModel @model {
   id: ID!
   owner: String
-  metadata1: String!
+  tracker: String!
+  metadata: AWSJSON!
 }

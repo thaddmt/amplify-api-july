@@ -7,6 +7,7 @@ export const getDeviceModel = /* GraphQL */ `
     getDeviceModel(id: $id) {
       id
       owner
+      tracker
       metadata1
       createdAt
       updatedAt
@@ -23,6 +24,7 @@ export const listDeviceModels = /* GraphQL */ `
       items {
         id
         owner
+        tracker
         metadata1
         createdAt
         updatedAt

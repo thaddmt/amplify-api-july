@@ -10,6 +10,7 @@ export const createDeviceModel = /* GraphQL */ `
     createDeviceModel(input: $input, condition: $condition) {
       id
       owner
+      tracker
       metadata1
       createdAt
       updatedAt
@@ -24,6 +25,7 @@ export const updateDeviceModel = /* GraphQL */ `
     updateDeviceModel(input: $input, condition: $condition) {
       id
       owner
+      tracker
       metadata1
       createdAt
       updatedAt
@@ -38,6 +40,7 @@ export const deleteDeviceModel = /* GraphQL */ `
     deleteDeviceModel(input: $input, condition: $condition) {
       id
       owner
+      tracker
       metadata1
       createdAt
       updatedAt
