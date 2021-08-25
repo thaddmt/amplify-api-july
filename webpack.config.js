@@ -20,6 +20,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".mjs", ".tsx", ".ts", ".js"],
+    symlinks: false,
   },
   devServer: {
     contentBase: "./dist",
