@@ -16,11 +16,17 @@ export async function createDevice(options: any) {
 
   const tracker = "aTrackerID"; // Geo.getTrackerId();
 
+  const input = {
+    ...options,
+    tracker,
+    metadata: JSON.stringify(options.metadata),
+  };
+
   const createDeviceModel =
     GQL_TYPES.mutations[moduleName as keyof typeof GQL_TYPES.mutations];
 
   const data = await API.graphql(
-    graphqlOperation(createDeviceModel, { input: { ...options, tracker } })
+    graphqlOperation(createDeviceModel, { input })
   );
   return data;
 }

@@ -8,7 +8,7 @@ export const onCreateDeviceModel = /* GraphQL */ `
       id
       owner
       tracker
-      metadata1
+      metadata
       createdAt
       updatedAt
     }
@@ -20,7 +20,7 @@ export const onUpdateDeviceModel = /* GraphQL */ `
       id
       owner
       tracker
-      metadata1
+      metadata
       createdAt
       updatedAt
     }
@@ -32,7 +32,7 @@ export const onDeleteDeviceModel = /* GraphQL */ `
       id
       owner
       tracker
-      metadata1
+      metadata
       createdAt
       updatedAt
     }
